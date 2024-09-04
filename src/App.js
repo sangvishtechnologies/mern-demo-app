@@ -3,10 +3,12 @@ import Sidebar from "./Sidebar";
 import Home from "./Pages/Home";
 import Team from "./Pages/Team";
 import Calender from "./Pages/Calender";
-import Documents from "./Pages/Documents";
+import Documents from "./Pages/Piechart";
 import Projects from "./Pages/Projects";
 import styled from "styled-components";
+import LoginForm from "./Login/LoginForm";
 import { AnimatePresence } from "framer-motion";
+import McqForm from "./Pages/McqForm";
 
 const Pages = styled.div`
   width: 100vw;
@@ -36,6 +38,7 @@ function App() {
             <Route path="/calender" element={<Calender />} />
             <Route path="/documents" element={<Documents />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/MCQ" element={<McqForm />} />
           </Routes>
         </AnimatePresence>
       </Pages>
